@@ -4,12 +4,16 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
 using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using System.Net.Http;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Http;
 
 namespace RpgMvc.Controllers
 {
     public class UsuariosController : Controller
     {
-        public string uriBase = "xyz/Usuarios/";
+        public string uriBase = "http://lzsouza.somee.com/RpgApi/Usuarios/";
 
         [HttpGet]
         public ActionResult Index()
@@ -95,6 +99,14 @@ namespace RpgMvc.Controllers
             
         }
 
+       
+
+        
+
     }
 
+
+
+
+    
 }
